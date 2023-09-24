@@ -119,13 +119,22 @@ $users = [
 
 // array_filter() -- this method uses callback in its second parameter, and take an array as first parameter and returns
 // array with only modified value
+//
+//function checker($n){
+//    if($n%5==0){
+//        return $n;
+//    }
+//}
+//$a = [1,3,4,5,6,10,100];
+//
+//$modifed = array_filter($a,'checker');
+//print_r($modifed);
 
-function checker($n){
-    if($n%5==0){
-        return $n;
-    }
+$fruits = array("apple", "banana", "cherry");
+
+function test_alter(&$item, $key, $prefix) {
+    $item = "$prefix : $item";
 }
-$a = [1,3,4,5,6,10,100];
 
-$modifed = array_filter($a,'checker');
-print_r($modifed);
+array_walk($fruits, 'test_alter', 'fruit');
+print_r($fruits);

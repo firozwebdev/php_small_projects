@@ -81,6 +81,51 @@ $users = [
 //
 ////print_r($array);
 
-$array = ['apple','orange','Multa','banana'];
-$newArray = array_slice($array,2,1);
-print_r($newArray);
+//$array = ['apple','orange','Multa','banana'];
+//$newArray = array_slice($array,2,1);
+//print_r($newArray);
+
+//$array = ['apple','orange','Multa','banana'];
+//$output = in_array('apple',$array); // if found, it will return 1
+//if(in_array('banana',$array)){   // in array method is used for index array
+//    echo 'Banana is found on array';
+//}
+
+
+//$user = ['id' => 1, 'name' => 'Alice', 'email' => 'alice@example.com'];
+//if(array_key_exists('ids',$user)){
+//    echo 'Key Id exists in this array';
+//}else{
+//    echo 'Not Exists';
+//}
+
+// array_search() -- search item with given value and return corresponding key with that value
+//$fruits = ['first'=>'banana','second'=>'apple','third'=>'Multa','fourth'=>'Cherry'];
+//$key = array_search('Multa',$fruits);
+//echo $key;
+
+// array_map() -- this method uses callback in its first parameter, and take an array as second parameter and returns
+// whole array with modifed value
+
+//function square($n){
+//    return $n*$n;
+//}
+//$a = [1,3,4,5,6];
+//
+//$modifed = array_map('square',$a);
+//print_r($modifed);
+
+
+
+// array_filter() -- this method uses callback in its second parameter, and take an array as first parameter and returns
+// array with only modified value
+
+function checker($n){
+    if($n%5==0){
+        return $n;
+    }
+}
+$a = [1,3,4,5,6,10,100];
+
+$modifed = array_filter($a,'checker');
+print_r($modifed);

@@ -153,7 +153,7 @@ $portion = array_slice($fruits, 1, 2);
 
 #count() - Counts the number of elements in an array.
 $numbers = array(1, 2, 3, 4, 5);
-echo count($numbers)
+echo count($numbers);
 
 #sizeof() - An alias of count(). Also counts the number of elements in an array.
 $numbers = array(1, 2, 3, 4, 5);

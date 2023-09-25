@@ -266,13 +266,24 @@ $string = "PHP and Framework Course from OSTAD";
 //$result = compact('name','age','email');
 //print_r($result);
 
-$data = [
-    'name' => 'sabuz',
-    'age' => 23,
-    'email' =>'smskushtia@gmail.com'
-];
+//$data = [
+//    'name' => 'sabuz',
+//    'age' => 23,
+//    'email' =>'smskushtia@gmail.com'
+//];
+//
+//extract($data);
+//echo "{$name} \n";
+//echo "{$age} \n";
+//echo "{$email} \n";
 
-extract($data);
-echo "{$name} \n";
-echo "{$age} \n";
-echo "{$email} \n";
+//$array = ['name'=>'sabuz','age'=>34,'email'=>'smskushtia@gmail.com'];
+//$newArray = array_flip($array);
+//print_r($newArray);
+
+$array = [4,3,2,5,6,7];
+function callback($n){
+    return $n*$n;
+}
+$newArray = array_map('callback',$array);
+print_r($newArray);

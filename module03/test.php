@@ -132,9 +132,46 @@ $users = [
 
 $fruits = array("apple", "banana", "cherry");
 
-function test_alter(&$item, $key, $prefix) {
-    $item = "$prefix : $item";
-}
+//function test_alter(&$item, $key, $prefix) {
+//    $item = "$prefix : $item";
+//}
+//
+//array_walk($fruits, 'test_alter', 'fruit');
+//print_r($fruits);
 
-array_walk($fruits, 'test_alter', 'fruit');
-print_r($fruits);
+//print_r(array_reverse($fruits)) ;
+
+/*
+ * String functions
+ */
+
+//$string = 'Hello World';
+////echo str_word_count($string);
+//$position = stripos($string, 'world');
+//
+//if($position !== false){
+//    echo 'it is found';
+//}else{
+//    echo "it is not found";
+//}
+
+$string = "PHP and Framework Course from OSTAD";
+//$replace = 'Laravel';
+//$search = 'Framework';
+//echo  str_replace($search,$replace,$string);
+//$newString = strtr($string,[
+//   "language" => 'PHp',
+//   "Framework" => "laravel"
+//]);
+//
+//echo $newString;
+
+//$arrays = explode(' ',$string);
+////print_r(count($arrays));
+//$newString = implode(' ',$arrays);
+//echo $newString;
+
+$string = '"Light to moderate rain or thundershowers accompanied by temporary gusty wind is likely at many places over Rangpur, Rajshahi, Mymensingh and Sylhet divisions; a few places over Dhaka and Khulna divisions and at one or two places over Barishal and Chattogram divisions with moderately heavy to heavy falls at places 
+            over Rangpur, Rajshahi, Mymensingh and Sylhet divisions," it said.';
+
+echo wordwrap($string,20,"...") ;

@@ -171,7 +171,33 @@ $string = "PHP and Framework Course from OSTAD";
 //$newString = implode(' ',$arrays);
 //echo $newString;
 
-$string = '"Light to moderate rain or thundershowers accompanied by temporary gusty wind is likely at many places over Rangpur, Rajshahi, Mymensingh and Sylhet divisions; a few places over Dhaka and Khulna divisions and at one or two places over Barishal and Chattogram divisions with moderately heavy to heavy falls at places 
-            over Rangpur, Rajshahi, Mymensingh and Sylhet divisions," it said.';
+//$string = '"Light to moderate rain or thundershowers accompanied by temporary gusty wind is likely at many places over Rangpur, Rajshahi, Mymensingh and Sylhet divisions; a few places over Dhaka and Khulna divisions and at one or two places over Barishal and Chattogram divisions with moderately heavy to heavy falls at places
+//            over Rangpur, Rajshahi, Mymensingh and Sylhet divisions," it said.';
+//
+//echo wordwrap($string,20,"...") ;
 
-echo wordwrap($string,20,"...") ;
+/*
+ * Array built in functions
+ */
+
+#array_search() - Searches the array for a given value and returns the first corresponding key.
+//$assoc = array("first" => "apple", "second" => "banana");
+//$key = array_search("banana", $assoc);
+//echo $key;
+
+#array_splice() - Removes a portion of the array and replaces it with something else.
+$fruits = array("apple", "banana", "cherry");
+$newArray = array_splice($fruits, 1, 2, array("fig", "grape"));
+print_r($fruits);
+print_r($newArray);
+
+
+
+#array_slice() - Extracts a portion of the array.
+//$fruits = array("apple", "banana", "cherry",'Multa');
+////$portion = array_slice($fruits, 1, 2);
+////$portion = array_slice($fruits,1);
+////print_r($portion) ;
+//$replacement = ['Mango'];
+//$newArray = array_splice($fruits,1,'2');
+//print_r($newArray);

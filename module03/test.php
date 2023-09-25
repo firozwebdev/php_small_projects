@@ -186,10 +186,10 @@ $string = "PHP and Framework Course from OSTAD";
 //echo $key;
 
 #array_splice() - Removes a portion of the array and replaces it with something else.
-$fruits = array("apple", "banana", "cherry");
-$newArray = array_splice($fruits, 1, 2, array("fig", "grape"));
-print_r($fruits);
-print_r($newArray);
+//$fruits = array("apple", "banana", "cherry");
+//$newArray = array_splice($fruits, 1, 2, array("fig", "grape"));
+//print_r($fruits);
+//print_r($newArray);
 
 
 
@@ -201,3 +201,78 @@ print_r($newArray);
 //$replacement = ['Mango'];
 //$newArray = array_splice($fruits,1,'2');
 //print_r($newArray);
+
+//$numbers = array(3, 1, 4, 1, 5);
+//sort($numbers);
+//print_r(array_unique($numbers));
+//
+//$numbers = array(3, 1, 4, 1, 5);
+//rsort($numbers);
+//print_r(array_unique($numbers));
+
+#asort() - Sorts an array in ascending order with value and maintains index association that value.
+//$fruit = array("key1" => "lemon", "key2" => "orange", "key3" => "banana");
+//asort($fruit);
+//print_r($fruit);
+
+#arsort() -  Sorts an array in descending order with value and maintains index association that value.
+//$fruits = array("key1" => "lemon", "key2" => "orange", "key3" => "banana");
+//arsort($fruits);
+//print_r($fruits);
+
+// ksort()- Sorts an array in ascending order with key
+//$fruit = array("d" => "lemon", "a" => "orange", "b" => "banana");
+//ksort($fruit);
+//print_r($fruit);
+//
+//// krsort()- Sorts an array in ascending order with key
+//$fruit = array("d" => "lemon", "a" => "orange", "b" => "banana");
+//krsort($fruit);
+//print_r($fruit);
+
+#natsort() - Sorts an array using natural order algorithm.
+//$files = array("img1.png", "img10.png", "img12.png", "img2.png");
+//natsort($files);
+//print_r($files);
+
+//$people = array( "Peter" => 35, "Jack" => 32,  "Mary" => 28);
+//function ageComparator($a, $b) {
+//    return $a - $b;
+//}
+//uasort($people , 'ageComparator');
+//print_r($people);
+
+#array_reduce() - Iteratively reduces the array to a single value using a callback function.
+
+//$numbers = array(1, 2, 3, 4, 5);
+//
+//function sum($carry, $item) {
+//    $carry += $item;
+//    return $carry;
+//}
+//
+//$result = array_reduce($numbers, 'sum');
+//echo $result;  // Outputs: 15
+
+//$letters = range('a', 'e');
+////print_r($letters);
+//$evenNumbers = range(1, 10, 2);
+//print_r($evenNumbers);
+
+//$name = 'sabuz';
+//$age = 24;
+//$email = 'smskushtia@gmail.com';
+//
+//$result = compact('name','age','email');
+//print_r($result);
+
+$data = [
+    'name' => 'sabuz',
+    'age' => 23,
+    'email' =>'smskushtia@gmail.com'
+];
+
+extract($data);
+echo "{$name} \n";
+echo "{$age} \n";
+echo "{$email} \n";
